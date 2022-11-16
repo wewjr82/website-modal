@@ -263,6 +263,11 @@ html {
 }
 
 @media screen and (max-width: 320px) {
+  .content-area {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .content-area h1 {
     padding: 0 20px;
   }
