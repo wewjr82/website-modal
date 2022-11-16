@@ -1,11 +1,26 @@
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 .page-header {
   background: #e1e2e3;
   padding: 20px;
+  max-width: 100%;
 }
 
 .content-area {
   background: #a3bef0;
-  height: 1500px;
+  height: 100vh;
   font-size: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +31,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -244,4 +260,28 @@
 .email-thank__success .email-thank__title,
 .email-thank__success .email-thank__message {
   opacity: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .content-area h1 {
+    padding: 0 20px;
+  }
+
+  .area {
+    margin: 20%;
+    font-size: 80px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .email-modal__message {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .email-modal__side-img {
+    display: none;
+  }
 }
